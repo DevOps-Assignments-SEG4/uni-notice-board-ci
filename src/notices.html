@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Academic Notices | University Notice Board</title>
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../styles/style.css">
+
+</head>
+<body>
+
+<!-- Header -->
+<header class="header">
+    <div class="container">
+        <div class="logo">
+            <h1>Uni<span>Notice</span></h1>
+        </div>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="notices.html" class="active">Academic Notices</a></li>
+                <li><a href="#">Exam Schedules</a></li>
+                <li><a href="#">Admissions</a></li>
+                <li><a href="#">Contacts</a></li>
+            </ul>
+        </nav>
+
+        <div class="menu-toggle">☰</div>
+    </div>
+</header>
+
+<!-- Page Header -->
+<section class="page-header">
+    <div class="container">
+        <h1>Academic Notices</h1>
+        <p>Latest circulars, academic updates & announcements</p>
+    </div>
+</section>
+
+<!-- Academic Notices -->
+<section class="academic-notices">
+    <div class="container">
+        <div class="notice-list">
+
+            <div class="notice-card">
+                <span class="notice-date">15 Jan 2026</span>
+                <h3>Semester Registration Deadline</h3>
+                <p>All students are informed that semester registration will close on 20 January 2026.</p>
+                <span class="notice-tag">Academic</span>
+            </div>
+
+            <div class="notice-card">
+                <span class="notice-date">12 Jan 2026</span>
+                <h3>Workshop on Web Development</h3>
+                <p>The Department of Computer Science is organizing a hands-on workshop.</p>
+                <span class="notice-tag">Workshop</span>
+            </div>
+
+            <div class="notice-card">
+                <span class="notice-date">10 Jan 2026</span>
+                <h3>Mid-Term Examination Policy</h3>
+                <p>Updated mid-term examination policy has been uploaded for student review.</p>
+                <span class="notice-tag">Exams</span>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <div class="container">
+        <p>© 2026 University Notice Board. All Rights Reserved.</p>
+        <p>Designed for quick & easy access to university updates</p>
+    </div>
+</footer>
+
+<script>
+    document.querySelector('.menu-toggle').addEventListener('click', () => {
+        document.querySelector('.navbar').classList.toggle('active');
+    });
+</script>
+
+</body>
+</html>

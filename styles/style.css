@@ -1,3 +1,78 @@
+/* Contact Page */
+.contact-hero {
+    background: linear-gradient(rgba(13, 45, 98, 0.85), rgba(13, 45, 98, 0.75)),
+                url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=2000&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 7rem 0 6rem;
+    color: white;
+    text-align: center;
+}
+
+.contact-section {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+}
+
+.contact-info h2 {
+    color: #0d2d62;
+    margin-bottom: 1rem;
+}
+
+.info-list {
+    list-style: none;
+    margin-top: 1.2rem;
+}
+
+.info-list li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.contact-form {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4da6ff;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;

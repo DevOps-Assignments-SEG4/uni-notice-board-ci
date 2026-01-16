@@ -316,6 +316,7 @@ body {
 .admission-title {
     font-size: 1.5rem;
     font-weight: bold;
+}
 /* Page Header */
 .page-header {
     background: linear-gradient(rgba(13, 45, 98, 0.85), rgba(13, 45, 98, 0.75)),

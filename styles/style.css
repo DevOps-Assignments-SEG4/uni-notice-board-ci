@@ -214,6 +214,79 @@ body {
         font-size: 2.4rem;
     }
 }
+/* Page Header */
+.page-header {
+    background: linear-gradient(rgba(13, 45, 98, 0.85), rgba(13, 45, 98, 0.75)),
+                url('https://images.unsplash.com/photo-1523240795612-9a054b0db644');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+/* Academic Notices Section */
+.academic-notices {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+
+.notice-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.notice-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.notice-card:hover {
+    transform: translateY(-6px);
+}
+
+.notice-date {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #4da6ff;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+}
+
+.notice-card h3 {
+    color: #0d2d62;
+    margin-bottom: 0.8rem;
+}
+
+.notice-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.2rem;
+}
+
+.notice-tag {
+    display: inline-block;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.8rem;
+    border-radius: 50px;
+    background-color: #e8f2ff;
+    color: #0d2d62;
+    font-weight: 500;
+}
 .cards-section {
     display: flex;
     gap: 20px;

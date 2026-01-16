@@ -1,3 +1,78 @@
+/* Contact Page */
+.contact-hero {
+    background: linear-gradient(rgba(13, 45, 98, 0.85), rgba(13, 45, 98, 0.75)),
+                url('https://images.unsplash.com/photo-1529070538774-1843cb3265df?auto=format&fit=crop&w=2000&q=80');
+    background-size: cover;
+    background-position: center;
+    padding: 7rem 0 6rem;
+    color: white;
+    text-align: center;
+}
+
+.contact-section {
+    padding: 5rem 0;
+    background-color: white;
+}
+
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 3rem;
+}
+
+.contact-info h2 {
+    color: #0d2d62;
+    margin-bottom: 1rem;
+}
+
+.info-list {
+    list-style: none;
+    margin-top: 1.2rem;
+}
+
+.info-list li {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+}
+
+.contact-form {
+    background: #f8f9fa;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    outline: none;
+    font-size: 1rem;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #4da6ff;
+}
+
+@media (max-width: 768px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -241,11 +316,103 @@ body {
 .admission-title {
     font-size: 1.5rem;
     font-weight: bold;
+/* Page Header */
+.page-header {
+    background: linear-gradient(rgba(13, 45, 98, 0.85), rgba(13, 45, 98, 0.75)),
+                url('https://images.unsplash.com/photo-1523240795612-9a054b0db644');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 6rem 0;
+}
+
+.page-header h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    opacity: 0.95;
+}
+
+/* Academic Notices Section */
+.academic-notices {
+    padding: 5rem 0;
+    background-color: #f8f9fa;
+}
+
+.notice-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.notice-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    transition: transform 0.3s;
+}
+
+.notice-card:hover {
+    transform: translateY(-6px);
+}
+
+.notice-date {
+    display: inline-block;
+    font-size: 0.9rem;
+    color: #4da6ff;
+    font-weight: 500;
+    margin-bottom: 0.6rem;
+}
+
+.notice-card h3 {
+    color: #0d2d62;
+    margin-bottom: 0.8rem;
+}
+
+.notice-card p {
+    font-size: 0.95rem;
+    color: #555;
+    margin-bottom: 1.2rem;
+}
+
+.notice-tag {
+    display: inline-block;
+    padding: 0.35rem 0.8rem;
+    font-size: 0.8rem;
+    border-radius: 50px;
+    background-color: #e8f2ff;
+    color: #0d2d62;
+    font-weight: 500;
+}
+.cards-section {
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    justify-content: center;
+}
+
+.card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
+}
+
+.card-title {
+    font-size: 1.5rem;
     color: #333;
     margin-bottom: 10px;
 }
 
 .admission-description {
+.card-description {
     font-size: 1rem;
     color: #666;
     margin-bottom: 20px;
@@ -265,4 +432,18 @@ body {
 .admission-link:hover {
     background-color: #007bff;
     color: #fff;
+}
+.card-link {
+    text-decoration: none;
+    color: #f39c12;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .cards-section {
+        flex-direction: column;
+        align-items: center;
+    }
 }
